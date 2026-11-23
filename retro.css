@@ -3,7 +3,7 @@
 html { scroll-behavior: auto; }
 html[lang="en"] { zoom: var(--page-zoom, 1); }
 .page-top { position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none; }
-.language-switch { position: fixed; top: 10px; left: 10px; z-index: 25; display: flex; gap: 4px; padding: 5px; background: #e9d9ef; border: 3px ridge #fff; font-size: 14px; }
+.language-switch { position: absolute; top: 10px; left: 10px; right: auto; bottom: auto; z-index: 25; zoom: calc(1 / var(--page-zoom, 1)); display: flex; gap: 4px; padding: 5px; background: #e9d9ef; border: 3px ridge #fff; font-size: 14px; }
 .language-switch a { display: block; padding: 4px 9px; border: 2px outset #fff; background: #f5eafa; color: #652785; text-decoration: none; font-weight: 600; }
 .language-switch a[aria-current="page"] { border-style: inset; background: #652785; color: #fff; }
 .language-switch a:hover { text-decoration: underline; }
@@ -23,6 +23,9 @@ a:hover { color: #a51c6b; }
 .site-header { min-height: 95px; padding: 16px 24px; background: #e9d9ef; border: 4px ridge #c6a8d4; }
 .site-title { color: #652785; font-family: inherit; font-weight: bold; font-size: 24px; letter-spacing: 0; }
 .site-title span { color: #71507e; font-family: inherit; font-size: 15px; letter-spacing: .04em; }
+.last-updated { flex: 0 0 auto; margin: 0 0 0 auto; text-align: right; line-height: 1.6; }
+.last-updated span { display: block; color: #71507e; font-size: 12px; }
+.last-updated time { display: block; color: #652785; font-size: 15px; font-weight: 600; white-space: nowrap; }
 .header-contact { padding: 4px 10px; background: #ddd; border: 3px outset #fff; text-decoration: underline; white-space: nowrap; }
 main { padding: 0 24px; background: #fffaff; border-inline: 3px ridge #c6a8d4; }
 .hero { padding: 30px 0 24px; text-align: center; }
@@ -33,13 +36,13 @@ h1 { color: #652785; font-family: inherit; font-size: clamp(24px, 2.8vw, 36px); 
 .rising-sun-background .hero-description { background: #ffffffdc; }
 .hero-translation { margin: 8px 0 0; color: #71507e; font-size: 14px; line-height: 1.6; letter-spacing: .03em; }
 .hero-description { color: #4d365d; margin-top: 18px; }
-.contact-panel { margin-top: 24px; border: 5px ridge #cfa5e7; border-radius: 0; background: #652785; padding: 18px 12px; }
+.contact-panel { display: block; container-type: inline-size; margin-top: 0; padding: 22px 24px; border: 2px solid #9062aa; border-radius: 0; background: #5c2778; text-align: center; }
 .contact-label { justify-content: center; color: #ffff88; }
-.email, .email:visited { color: #ffff66; text-decoration-color: #ffff66; font-family: inherit; font-size: clamp(16px, 2.1vw, 27px); font-weight: bold; }
+.email, .email:visited { color: #fff; text-decoration-color: #bfa3d0; text-decoration-thickness: 1px; font-family: inherit; font-size: clamp(20px, 2vw, 30px); font-weight: 600; }
 .email:hover { color: #fff; }
 .contact-panel p { color: #fff; }
-.contact-panel .email { margin-top: 0; }
-.contact-panel .contact-heading { margin: 0 0 8px; color: #fff; font-size: 14px; font-weight: 600; }
+.contact-panel .email { display: inline-block; max-width: 100%; margin: 0 auto; text-align: center; white-space: nowrap; overflow-wrap: normal; word-break: normal; font-size: clamp(10px, 4.5cqi, 30px); }
+.contact-heading { margin: 24px 0 7px; color: #652785; font-size: 20px; font-weight: 600; text-align: left; }
 .section-nav { top: 0; justify-content: center; gap: 6px; padding: 14px 0; border-block: 2px solid #c0a0d0; background: #ecddf3; }
 .section-nav a { border: 3px outset #fff; border-radius: 0; background: #e6d4ed; color: #652785; font-weight: bold; text-decoration: underline; padding: 6px 12px; transition: none; }
 .section-nav a:hover, .section-nav a:focus-visible { border-style: inset; color: #8b205e; background: #eee; }
@@ -130,5 +133,5 @@ html.english-desktop .aa-frame-second { opacity: 0; animation: aa-show-second 1.
   .site-title { font-size: 21px; }
   .hero { padding-top: 24px; }
   .section-nav a { padding: 5px 8px; }
-  .contact-panel { padding: 16px 8px; }
+  .contact-panel { padding: 16px 18px; }
 }
