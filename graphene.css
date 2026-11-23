@@ -26,6 +26,7 @@
 /* Plain section titles with a small solid hexagon, without a rectangular bar. */
 h2 { display: flex; align-items: center; gap: 10px; padding: 0; border: 0; background: none; color: #652785; }
 h2::before { content: ""; flex: 0 0 15px; width: 15px; height: 18px; background: #87529d; clip-path: var(--hex-cell); }
+.achievement-subgroup { margin: 24px 0 16px; color: #705c7c; font-size: 15px; font-weight: 600; }
 @media (max-width: 640px) {
   .section-nav a { padding: 9px 16px; }
 }
