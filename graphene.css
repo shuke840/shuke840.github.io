@@ -1,0 +1,31 @@
+/* Early-web styling with small hexagonal accents, without lattice illustrations. */
+:root {
+  --hex-tab: polygon(10px 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 10px 100%, 0 50%);
+  --hex-cell: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.contact-heading { display: flex; align-items: center; gap: 7px; }
+.contact-heading::before { content: ""; width: 11px; height: 13px; background: #87529d; clip-path: var(--hex-cell); }
+.contact-panel {
+  border: 0;
+  background: #652785;
+  clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0 50%);
+}
+.section-nav { border: 0; background: #fffaff; }
+.section-nav a {
+  border: 0;
+  background: #d8bde6;
+  color: #652785;
+  clip-path: var(--hex-tab);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 10px 20px;
+}
+.section-nav a:hover, .section-nav a:focus-visible { border: 0; background: #ecdaf4; color: #8b205e; }
+.section-nav a:focus-visible { outline: 2px solid #87529d; outline-offset: -5px; }
+.section-heading .eyebrow { margin-left: 0; }
+/* Plain section titles with a small solid hexagon, without a rectangular bar. */
+h2 { display: flex; align-items: center; gap: 10px; padding: 0; border: 0; background: none; color: #652785; }
+h2::before { content: ""; flex: 0 0 15px; width: 15px; height: 18px; background: #87529d; clip-path: var(--hex-cell); }
+@media (max-width: 640px) {
+  .section-nav a { padding: 9px 16px; }
+}
