@@ -50,6 +50,21 @@ dd a:hover { color: #2f7161; }
 .research-results li::marker { color: #537369; }
 .research-results strong { display: block; margin-bottom: 7px; font-size: 16px; font-weight: 600; }
 .research-outlook { border-left: 3px solid #7b9b8d; border-top: 0; padding: 4px 0 4px 20px; }
+.section-body { min-width: 0; }
+.achievement-count { margin-left: 9px; color: var(--muted); font-size: 14px; font-weight: 400; white-space: nowrap; }
+.achievement-intro { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+.achievement-list { margin: 0; padding-left: 1.5em; }
+.achievement { padding: 0 0 24px 8px; overflow-wrap: anywhere; }
+.achievement + .achievement { padding-top: 24px; border-top: 1px solid var(--line); }
+.achievement::marker { color: var(--muted); font-size: 14px; }
+.achievement h4 { margin: 0 0 10px; font-size: 17px; font-weight: 600; line-height: 1.65; }
+.achievement-authors { margin: 0 0 8px; color: var(--muted); font-size: 14px; line-height: 1.85; }
+.author-self { color: var(--ink); font-weight: 700; }
+.achievement-venue { margin: 0; font-size: 14px; line-height: 1.85; }
+.achievement-links { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 12px; font-size: 14px; }
+.achievement-links a { color: #2f6555; }
+.achievements .achievement-group-title { margin-top: 38px; }
+.achievement-source { margin: 18px 0 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px 0 36px; color: var(--muted); font-size: 14px; }
 .site-footer p { margin: 0; font-family: Georgia, serif; font-size: 15px; }
 @media (max-width: 640px) {
