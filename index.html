@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>Progate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="研究内容、研究業績、学会発表と連絡先をまとめた個人ホームページです。">
+    <meta name="theme-color" content="#173b37">
+    <title>研究者個人サイト | Research Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <h1 class="title">HTML & CSS の開発環境を用意しよう！</h1>
-    <p>自分のPCでWebページを開発する方法をfasdsaさdfsaddfas学習しましょうuuuuuu
-    </p>
+    <a class="skip-link" href="#profile">本文へ移動</a>
+    <header class="site-header" id="top">
+      <a class="site-title" href="#top">Research Portfolio<span>研究者個人サイト</span></a>
+      <a class="header-contact" href="mailto:yashima.syunsuke.r8@dc.tohoku.ac.jp">お問い合わせ</a>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-intro">
+          <p class="eyebrow">RESEARCH &amp; ACTIVITIES</p>
+          <!-- お名前・所属が決まったら、この見出しと説明を編集してください。 -->
+          <h1 id="hero-title">研究と、その歩み。</h1>
+          <p class="hero-description">研究内容や論文、学会発表などの活動をまとめています。<br>研究に関するご連絡は、下記メールアドレスまでお寄せください。</p>
+        </div>
+        <div class="contact-panel">
+          <div class="contact-label"><span class="mail-icon" aria-hidden="true">✉</span> CONTACT <span class="contact-ja">連絡先</span></div>
+          <a class="email" href="mailto:yashima.syunsuke.r8@dc.tohoku.ac.jp">yashima.syunsuke.r8@dc.tohoku.ac.jp</a>
+          <p>クリックするとメールアプリが開きます。</p>
+        </div>
+      </section>
+      <nav class="section-nav" aria-label="ページ内メニュー">
+        <a href="#profile">プロフィール</a>
+        <a href="#research">研究内容</a>
+        <a href="#publications">研究業績</a>
+        <a href="#presentations">学会発表</a>
+      </nav>
+      <div class="sections">
+        <section class="content-section" id="profile" aria-labelledby="profile-title">
+          <div class="section-heading"><p class="eyebrow">PROFILE</p><h2 id="profile-title">プロフィール</h2></div>
+          <div class="section-body">
+            <!-- 下記の「準備中」を、ご自身の情報に差し替えてください。 -->
+            <dl class="profile-list">
+              <div><dt>氏名</dt><dd class="placeholder">準備中</dd></div>
+              <div><dt>所属</dt><dd class="placeholder">準備中</dd></div>
+              <div><dt>研究分野</dt><dd class="placeholder">準備中</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:yashima.syunsuke.r8@dc.tohoku.ac.jp">yashima.syunsuke.r8@dc.tohoku.ac.jp</a></dd></div>
+            </dl>
+          </div>
+        </section>
+        <section class="content-section" id="research" aria-labelledby="research-title">
+          <div class="section-heading"><p class="eyebrow">RESEARCH</p><h2 id="research-title">研究内容</h2></div>
+          <div class="section-body"><h3>研究テーマ</h3><p class="placeholder">現在、掲載準備中です。</p><p class="section-note">研究の背景や目的、取り組んでいるテーマをこちらに掲載します。</p></div>
+        </section>
+        <section class="content-section" id="publications" aria-labelledby="publications-title">
+          <div class="section-heading"><p class="eyebrow">PUBLICATIONS</p><h2 id="publications-title">研究業績</h2></div>
+          <div class="section-body"><h3>論文・著書</h3><p class="placeholder">現在、掲載準備中です。</p><p class="section-note">論文タイトル、著者、掲載誌、発行年、DOIなどをこちらに掲載します。</p></div>
+        </section>
+        <section class="content-section" id="presentations" aria-labelledby="presentations-title">
+          <div class="section-heading"><p class="eyebrow">PRESENTATIONS</p><h2 id="presentations-title">学会発表</h2></div>
+          <div class="section-body"><h3>口頭発表・ポスター発表</h3><p class="placeholder">現在、掲載準備中です。</p><p class="section-note">発表タイトル、発表者、学会名、開催年月などをこちらに掲載します。</p></div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><p>Research Portfolio</p><a href="#top">ページの先頭へ</a></footer>
   </body>
 </html>
